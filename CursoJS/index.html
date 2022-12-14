@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body onload="mostrar()">
+    <div class="content">
+        <div class="contact-form">
+            <h1>Nuevo Producto </h1>
+            <form id="forma">
+
+                <h2>Agregar Producto</h2>
+                <p>
+                    <label>idProducto</label>
+                    <input type="text" id="id" placeholder="El id del producto" />
+                </p>
+                <p>
+                    <label>Nombres</label>
+                    <input type="text" name="nombre" id="nombre" placeholder="Escribe tu nombre" />
+                </p>
+                <p>
+                    <label>Cantidad</label>
+                    <input type="text" id="cantidad" placeholder="Escriba la cantidad" />
+                </p>
+                <p>
+                    <label>Precio</label>
+                    <input type="text" id="precio" placeholder="Escribe el precio" />
+                </p>
+
+
+
+
+                <br />
+
+            </form>
+            <p class="button">
+                <button onclick="agregar()">Enviar</button>
+            </p>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>id</th>
+                        <th>Producto</th>
+                        <th>Cantidad</th>
+                        <th>Precio</th>
+
+                    </tr>
+                </thead>
+                <tbody id="tabla">
+                    <!-- <tr>
+                        <td>January</td>
+                        <td>$100</td>
+                    </tr>
+                    <tr>
+                        <td>February</td>
+                        <td>$80</td>
+                    </tr> -->
+                </tbody>
+                <!-- <tfoot>
+                    <tr>
+                        <td>Sum</td>
+                        <td>$180</td>
+                    </tr>
+                </tfoot> -->
+            </table>
+            
+        </div>
+    </div>
+
+    <script src="js/app.js"></script>
+    <script src="js/producto.js"></script>
+
+</body>
+
+</html>
